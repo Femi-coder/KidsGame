@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity() {
     private fun checkGuess(guess: Int) {
         guessCount++
         when {
-            guess < secretNumber -> messageText.text = "⬆️ Higher!"
-            guess > secretNumber -> messageText.text = "⬇️ Lower!"
+            guess < secretNumber -> messageText.text = "Higher!"
+            guess > secretNumber -> messageText.text = "Lower!"
             else -> {
                 messageText.text = "🎉 Correct! You guessed it in $guessCount guesses!"
                 guessInput.isEnabled = false
